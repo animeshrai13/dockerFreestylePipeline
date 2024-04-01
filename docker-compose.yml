@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerfreestylepipeline:
+    image: ${DOCKER_REGISTRY-}dockerfreestylepipeline
+    build:
+      context: .
+      dockerfile: dockerFreestylePipeline/Dockerfile
